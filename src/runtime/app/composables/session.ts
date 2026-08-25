@@ -32,7 +32,7 @@ export function useUserSession(): UserSessionComposable {
         accept: 'application/json',
       },
       retry: false,
-    }).catch(reason => {
+    }).catch((reason) => {
       console.log('Failure on fetching session', reason)
       return null
     })
